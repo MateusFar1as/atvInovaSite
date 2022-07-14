@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espec</title>
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="espec.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <my-header></my-header>
+        <a href="/index.html"></a>
+        <main>
+            <div class="headMain">
+                <h4>Glass > Inovações</h4>
+                <h2>Raio-X no Google Glass</h2>
+                <span style="float: right;">Atualizado em 08/07/2022</span>
+            </div>
+            <p style="margin-top: 40px;">Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+            
+            <div class="areaIMG">
+                <img src="./imgs/oculos.png" alt="" style="height: 350px; width: 500px;">
+                <div class="circ" onclick="mudarInfo(1)"></div>
+                <div class="circ2" onclick="mudarInfo(2)"></div>
+                <div class="circ3" onclick="mudarInfo(3)"></div>
+                <div class="circ4" onclick="mudarInfo(4)"></div>
+
+
+                <span id="areaV" style="font-weight: bold; margin-right: 80px; margin-top: 10px;">Clique sobre as áres destacadas em vermelho</span>
+
+                <div id="bateria" style="margin-top: 6px; margin-left: 10px; display: none;">
+                    <h2>Bateria e Gadgets</h2>
+                    <h3 style="margin-top: 3px;">Quais são os dispositivos que complementam o Glass?</h3>
+                    <span>Segundo a própria Google, o Glass virá com uma bateria que tem autonomia suficiente para durar um dia inteiro. Apenas algumas atividades como videoconferências e longas filmagens vão exigir um pouco mais. Além disso ele vem com WiFi, Bluetooth, 3G/4G e muito mais.</span>
+                </div>
+
+                <div id="sensores" style="margin-top: 6px; margin-left: 10px; display: none;">
+                    <h2>Sensores</h2>
+                    <h3 style="margin-top: 3px;">A sensibilidade de um simples óculos</h3>
+                    <span>Quem pensa que para comandar o Google Glass vai precisar de teclado e mouse, se engana redondamente. O dispositivo vem com vários tipos de sensores e microfones embutidos. Assim, para dar um comando, basta falar ou passar o dedo na lateral do óculos.</span>
+                </div>
+
+                <div id="camera" style="margin-top: 6px; margin-left: 10px; display: none;">
+                    <h2>Câmera</h2>
+                    <h3 style="margin-top: 3px;">Filme e fotografe a qualquer momento</h3>
+                    <span>Com o Google Glass será possível tirar fotos com até 5 megapixels e gravar vídeos com 720 linhas de resolução. Os primeiros vídeos e fotos capturados com o aparelho já começaram a circular pela rede, mas até agora ninguém tem muitas informações técnicas.</span>
+                </div>
+
+                <div id="tela" style="margin-top: 6px; margin-left: 10px; display: none;">
+                    <h2>Tela</h2>
+                    <h3 style="margin-top: 3px;">Como o mundo vai aparecer</h3>
+                    <span>De acordo com fontes próximas do Google, os óculos vão contar com uma pequena tela de LCD ou AMOLED na parte superior e em frente aos olhos do usuário. Com o uso de uma câmera e GPS, você pode se situar, assim como selecionar opções com o movimento da cabeça.</span>
+                </div>
+            </div>
+        </main>
+
+        <my-footer></my-footer>
+</html>
